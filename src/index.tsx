@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import GlobalStyle from './styles/globals'
 import { ThemeProvider } from 'styled-components';
-import { defaultTheme } from './styles/theme';
+import { defaultTheme, GlobalStyle } from './styles/globals';
+
+import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={defaultTheme}>
-      <div>Oi!</div>
+      <Home />
       <GlobalStyle />
     </ThemeProvider>
   </React.StrictMode>,
