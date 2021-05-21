@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Container, Logo } from './styles';
-import LogoAsset from '../../assets/logo.svg';
+import { Container } from './styles';
+import Header from '../../components/Header';
 
 const Home: React.FC = () => {
   return (
   <Container>
-      <Logo src={LogoAsset} alt="Alura Dev"/>
-      <p>Mandioca Frita!</p>
+     <Header />
   </Container>
   );
 }
